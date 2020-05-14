@@ -13,7 +13,7 @@ class RNNClassifier(nn.Module):
                    'bidirectional': bidirectional, 'batch_first': batch_first}
 
         rnn_dict = {'lstm': nn.LSTM(**configs),
-                    'gru': nn.GRU(**configs, ),
+                    'gru': nn.GRU(**configs),
                     'simple': nn.RNN(**configs)}
 
         self.rnn_layer = rnn_dict[rnn_type]
