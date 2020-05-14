@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="rnn-classifier",  # Replace with your own username
+    name="urchade",  # Replace with your own username
     version="0.0.1",
     author="Urchade Zaratiana",
     author_email="urchade.zaratiana@gmail.com",
