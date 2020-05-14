@@ -1,3 +1,7 @@
+"""model.py
+Author: Urchade Zaratiana
+"""
+
 from torch import nn
 
 
