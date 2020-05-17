@@ -4,11 +4,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="rnn-classifier-urchade",  # Replace with your own username
-    version="0.0.1",
+    name="rnn-classifiers",  # Replace with your own username
+    version="0.0.2",
     author="Urchade Zaratiana",
     author_email="urchade.zaratiana@gmail.com",
-    description="Pytorch RNN classifier",
+    description="Pytorch RNN classifiers",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/urchade/Rnn-classifiers",

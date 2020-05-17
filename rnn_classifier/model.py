@@ -6,8 +6,8 @@ from torch import nn
 
 
 class RNNClassifier(nn.Module):
-    def __init__(self, input_size, hidden_units=128, num_classes=1, num_classifier_layers=2, rnn_hidden_size=32,
-                 rnn_type='lstm', num_rnn_layers=1, bidirectional=False, batch_first=True):
+    def __init__(self, input_size, hidden_units=128, num_classes=1, num_classifier_layers=2, rnn_hidden_size=64,
+                 rnn_type='lstm', num_rnn_layers=1, bidirectional=False, batch_first=True, activation=nn.ReLU()):
         super().__init__()
 
         self.rnn_type = rnn_type
@@ -30,7 +30,7 @@ class RNNClassifier(nn.Module):
 
         for i in range(num_classifier_layers):
             classifier.append(nn.Linear(intermediate, hidden_units))
-            classifier.append(nn.ReLU())
+            classifier.append(activation)
             intermediate = hidden_units
 
         classifier.append(nn.Linear(hidden_units, num_classes))
