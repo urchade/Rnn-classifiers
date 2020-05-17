@@ -1,6 +1,6 @@
 # Rnn-classifiers
 
-`pip install rnn-classifiers`
+**Install: **`pip install rnn-classifiers`
 
 ```python
 import torch
