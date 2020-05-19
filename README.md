@@ -1,7 +1,11 @@
 # Rnn-classifiers
 
-**Install**:`pip install rnn-classifiers`
+## Installation
+```bash
+pip install rnn-classifiers
+```
 
+## Usage
 ```python
 import torch
 from rnn_classifier import RNNClassifier
